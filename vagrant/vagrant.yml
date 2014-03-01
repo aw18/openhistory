@@ -1,0 +1,35 @@
+---
+- hosts: vagrant
+  user: vagrant
+  sudo: yes
+
+  vars:
+    hostname: precise64
+    cloud: false
+    pwd: /home/vagrant
+    isFirstRun: true
+
+  tasks:
+  - name: update base
+    apt: update_cache=yes upgrade=dist
+
+  - name: install base pkgs
+    apt: pkg={{ item }} state=present
+    with_items:
+    - htop
+    - curl
+    - screen
+    - tree
+    - git
+    - daemon
+    - vim
+    - python-mysqldb
+    - mysql
+
+  - name: mk vagrant .ssh
+    file: dest={{ pwd }}/.ssh state=directory
+    when: not cloud
+
+  - name: reboot the server
+    command: reboot
+    when: isFirstRun is defined
