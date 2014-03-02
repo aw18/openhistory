@@ -1,3 +1,5 @@
 .vagrant
 .idea
 *.swp
+*.sqlite3
+__init__.pyc
