@@ -1,11 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Team</title>
-</head>
-<body>
-    <h1>The Open History Team:</h1>
-    <h3>Po Liu</h3>
-    <h3>Albertina Wong</h3>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %} Team {% endblock %}
+
+{% block css %}
+img {
+    width: 300px;
+    height: 300px;
+}
+
+
+{% endblock %}
+{% block js %}{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Open History Team</h1>
+</div>
+
+
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" src="http://fc01.deviantart.net/fs70/i/2012/240/b/e/maple_leaf_by_dennish2010-d5cqqgy.jpg" alt="Po_avatar">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">Po Liu</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat,
+            dui eget convallis pulvinar, urna orci pharetra dolor, eget dapibus mi ante
+            consequat neque. Pellentesque placerat leo iaculis eros pretium, in laoreet
+            dui semper. Ut sed enim aliquet nisi blandit viverra sed vitae enim. Quisque
+            et erat porta, rutrum enim sed, porta leo. Vivamus tempor ligula turpis.
+        </p>
+    </div>
+</div>
+
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" src="http://www.callthekettleblack.com/sites/default/files/uploads/canadianMapleLeaf.jpg" alt="Albertina_avatar">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">Albertina Wong</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat,
+            dui eget convallis pulvinar, urna orci pharetra dolor, eget dapibus mi ante
+            consequat neque. Pellentesque placerat leo iaculis eros pretium, in laoreet
+            dui semper. Ut sed enim aliquet nisi blandit viverra sed vitae enim. Quisque
+            et erat porta, rutrum enim sed, porta leo. Vivamus tempor ligula turpis.
+        </p>
+    </div>
+</div>
+
+{% endblock %}
