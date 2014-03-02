@@ -7,3 +7,6 @@ def index(request):
 
 def p1(request):
     return render(request, '../templates/p1.html')
+
+def team(request):
+    return render(request, '../templates/team.html')
