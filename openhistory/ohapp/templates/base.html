@@ -59,9 +59,9 @@
             <div class="inner">
               <h3 class="masthead-brand">Open History</h3>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="team">Team</a></li>
+                <li {% block home_menuitem_active %}{% endblock %}><a href="">Home</a></li>
+                <li {% block features_menuitem_active %}{% endblock %}><a href="#">Features</a></li>
+                <li {% block team_menuitem_active %}{% endblock %}><a href="team">Team</a></li>
               </ul>
             </div>
           </div>
