@@ -40,13 +40,19 @@
         .carousel-inner {
             height: 800px;
         }
+
+        #title-page {
+            position: absolute;
+            top: 50%;
+            margin-top: 200px
+        }
     </style>
 
     <!-- Custom JS -->
     <script>
-        $('.carousel').carousel({
-            interval: 1
-        });
+        //$('.carousel').carousel({
+            //interval: 5000
+        //});
 
     </script>
   </head>
@@ -86,12 +92,19 @@
                   <div class="carousel-inner">
 
                     <div class="item active">
-                        <div class="container">
-                            <h1 class="cover-heading">Cover your page.</h1>
-                            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-                            <p class="lead">
-                              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-                            </p>
+                        <div class="container" id="title-page">
+                            <h1 class="cover-heading">Faces of the Second World War</h1>
+                            <div class="container" style="width:1000px">
+                                <p class="lead">This dataset features 2500 photographs of men and
+                                    women who served in the Canadian Forces during the Second World
+                                    War. Taken from the Department of National Defence (DND)
+                                    collection at Library and Archives Canada, these photographs
+                                    depict military life during the Second World War
+                                </p>
+                                <p class="lead">
+                                  <a href="#" class="btn btn-lg btn-default">Learn more</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
