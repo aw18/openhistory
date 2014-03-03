@@ -2,14 +2,13 @@ from django.db import models
 
 # Create your models here.
 class Photos(models.Model):
-    mikan_number = models.IntegerField()
-    title = models.CharField(max_length=500)
-    image_number = models.CharField(max_length=30)
-    image_url = models.URLField(max_length=200)
-    access_condition = models.CharField(max_length=1000)
-    branch_service = models.CharField(max_length=1000)
-    date_issued = models.DateTimeField()
+    title = models.TextField()
+    image_number = models.TextField()
+    image_url = models.TextField()
+    access_condition = models.TextField()
+    branch_service = models.TextField()
+    date_issued = models.TextField()
     description = models.TextField()
-    location = models.CharField(max_length=1000)
-    photographer = models.CharField(max_length=1000)
+    location = models.TextField()
+    photographer = models.TextField()
     subject = models.TextField()
